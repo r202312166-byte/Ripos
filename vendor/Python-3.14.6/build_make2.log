@@ -1,0 +1,156 @@
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE  -o Python/ceval.o Python/ceval.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/context.o Python/context.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/critical_section.o Python/critical_section.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/crossinterp.o Python/crossinterp.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/dynamic_annotations.o Python/dynamic_annotations.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/errors.o Python/errors.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/flowgraph.o Python/flowgraph.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/frame.o Python/frame.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/frozenmain.o Python/frozenmain.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/future.o Python/future.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/gc.o Python/gc.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/gc_free_threading.o Python/gc_free_threading.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/gc_gil.o Python/gc_gil.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/getargs.o Python/getargs.c
+Python/gc.c: In function 'show_stats_each_generations':
+Python/gc.c:1075:33: warning: unknown conversion type character 'z' in format [-Wformat=]
+ 1075 |                              " %zd",
+      |                                 ^
+Python/gc.c:1075:30: warning: too many arguments for format [-Wformat-extra-args]
+ 1075 |                              " %zd",
+      |                              ^~~~~~
+Python/gc.c: In function 'gc_collect_main':
+Python/gc.c:1481:25: warning: unknown conversion type character 'z' in format [-Wformat=]
+ 1481 |             "gc: done, %zd unreachable, %zd uncollectable, %.4fs elapsed\n",
+      |                         ^
+Python/gc.c:1481:42: warning: unknown conversion type character 'z' in format [-Wformat=]
+ 1481 |             "gc: done, %zd unreachable, %zd uncollectable, %.4fs elapsed\n",
+      |                                          ^
+Python/gc.c:1481:63: warning: format '%f' expects argument of type 'double', but argument 2 has type 'Py_ssize_t' {aka 'long long int'} [-Wformat=]
+ 1481 |             "gc: done, %zd unreachable, %zd uncollectable, %.4fs elapsed\n",
+      |                                                            ~~~^
+      |                                                               |
+      |                                                               double
+      |                                                            %.4lld
+ 1482 |             n+m, n, d);
+      |             ~~~                                                
+      |              |
+      |              Py_ssize_t {aka long long int}
+Python/gc.c:1481:13: warning: too many arguments for format [-Wformat-extra-args]
+ 1481 |             "gc: done, %zd unreachable, %zd uncollectable, %.4fs elapsed\n",
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/getcompiler.o Python/getcompiler.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/getcopyright.o Python/getcopyright.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -DPLATFORM='"mingw64_nt-10.0-190453"' -o Python/getplatform.o ./Python/getplatform.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/getversion.o Python/getversion.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/ceval_gil.o Python/ceval_gil.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/hamt.o Python/hamt.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/hashtable.o Python/hashtable.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/import.o Python/import.c
+Python/getargs.c: In function 'seterror':
+Python/getargs.c:415:38: warning: unknown conversion type character 'z' in format [-Wformat=]
+  415 |                           "argument %zd", iarg);
+      |                                      ^
+Python/getargs.c:415:27: warning: too many arguments for format [-Wformat-extra-args]
+  415 |                           "argument %zd", iarg);
+      |                           ^~~~~~~~~~~~~~
+Python/getargs.c: In function 'converttuple':
+Python/getargs.c:543:58: warning: unknown conversion type character 'z' in format [-Wformat=]
+  543 |                           "must be %s of length %d, not %zd",
+      |                                                          ^
+Python/getargs.c:543:27: warning: too many arguments for format [-Wformat-extra-args]
+  543 |                           "must be %s of length %d, not %zd",
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Python/getargs.c:557:57: warning: unknown conversion type character 'z' in format [-Wformat=]
+  557 |                       "must be tuple of length %d, not %zd",
+      |                                                         ^
+Python/getargs.c:557:23: warning: too many arguments for format [-Wformat-extra-args]
+  557 |                       "must be tuple of length %d, not %zd",
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Python/getargs.c: In function 'convertcharerr':
+Python/getargs.c:654:56: warning: unknown conversion type character 'z' in format [-Wformat=]
+  654 |                   "must be %.50s, not %.50s of length %zd",
+      |                                                        ^
+Python/getargs.c:654:19: warning: too many arguments for format [-Wformat-extra-args]
+  654 |                   "must be %.50s, not %.50s of length %zd",
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -I. -o Python/importdl.o ./Python/importdl.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/index_pool.o Python/index_pool.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/initconfig.o Python/initconfig.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/interpconfig.o Python/interpconfig.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/instrumentation.o Python/instrumentation.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/instruction_sequence.o Python/instruction_sequence.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/intrinsics.o Python/intrinsics.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/jit.o Python/jit.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/legacy_tracing.o Python/legacy_tracing.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/lock.o Python/lock.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/marshal.o Python/marshal.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/modsupport.o Python/modsupport.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/mysnprintf.o Python/mysnprintf.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/mystrtoul.o Python/mystrtoul.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/object_stack.o Python/object_stack.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/optimizer.o Python/optimizer.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/optimizer_analysis.o Python/optimizer_analysis.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/optimizer_symbols.o Python/optimizer_symbols.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/parking_lot.o Python/parking_lot.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/pathconfig.o Python/pathconfig.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/preconfig.o Python/preconfig.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/pyarena.o Python/pyarena.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/pyctype.o Python/pyctype.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/pyfpe.o Python/pyfpe.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/pyhash.o Python/pyhash.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/pylifecycle.o Python/pylifecycle.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/pymath.o Python/pymath.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/pystate.o Python/pystate.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/pythonrun.o Python/pythonrun.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/pytime.o Python/pytime.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/qsbr.o Python/qsbr.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/bootstrap_hash.o Python/bootstrap_hash.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -D_WIN32_WINNT=0x0A00  -I./Include/internal -I./Include/internal/mimalloc  -I. -I./Include    -DPy_BUILD_CORE -o Python/specialize.o Python/specialize.c
+Python/pylifecycle.c: In function '_coerce_default_locale_settings':
+Python/pylifecycle.c:275:9: error: implicit declaration of function 'setenv'; did you mean 'getenv'? [-Wimplicit-function-declaration]
+  275 |     if (setenv("LC_CTYPE", newloc, 1)) {
+      |         ^~~~~~
+      |         getenv
+make: *** [Makefile:3266：Python/pylifecycle.o] 错误 1
+make: *** 正在等待未完成的任务....
+Python/pytime.c: In function 'pytime_as_timeval_struct':
+Python/pytime.c:818:37: error: passing argument 2 of '_PyTime_AsTime_t' from incompatible pointer type [-Wincompatible-pointer-types]
+  818 |     res2 = _PyTime_AsTime_t(tv_sec, &tv->tv_sec);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     long int *
+Python/pytime.c:240:38: note: expected 'time_t *' {aka 'long long int *'} but argument is of type 'long int *'
+  240 | _PyTime_AsTime_t(PyTime_t t, time_t *t2)
+      |                              ~~~~~~~~^~
+make: *** [Makefile:3266：Python/pytime.o] 错误 1
+In file included from ./Include/internal/pycore_cell.h:6,
+                 from Python/ceval.c:10:
+In function 'initialize_locals',
+    inlined from '_PyEvalFramePushAndInit' at Python/ceval.c:1980:9,
+    inlined from '_PyEval_Vector' at Python/ceval.c:2100:34,
+    inlined from 'PyEval_EvalCode' at Python/ceval.c:982:21:
+./Include/internal/pycore_stackref.h:644:17: warning: array subscript [-2147483648, -1] is outside array bounds of '_PyStackRef[8]' [-Warray-bounds=]
+  644 |     _PyStackRef _temp = (REF); \
+      |                 ^~~~~
+Python/ceval.c:1739:13: note: in expansion of macro 'PyStackRef_CLOSE'
+ 1739 |             PyStackRef_CLOSE(args[j]);
+      |             ^~~~~~~~~~~~~~~~
+Python/ceval.c: In function 'PyEval_EvalCode':
+Python/ceval.c:2077:17: note: at offset [-17179869184, -8] into object 'stack_array' of size 64
+ 2077 |     _PyStackRef stack_array[8];
+      |                 ^~~~~~~~~~~
+In function 'initialize_locals',
+    inlined from '_PyEvalFramePushAndInit' at Python/ceval.c:1980:9,
+    inlined from '_PyEval_Vector' at Python/ceval.c:2100:34,
+    inlined from 'PyEval_EvalCode' at Python/ceval.c:982:21:
+./Include/internal/pycore_stackref.h:644:17: warning: array subscript [-2147483648, -1] is outside array bounds of '_PyStackRef[8]' [-Warray-bounds=]
+  644 |     _PyStackRef _temp = (REF); \
+      |                 ^~~~~
+Python/ceval.c:1726:21: note: in expansion of macro 'PyStackRef_CLOSE'
+ 1726 |                     PyStackRef_CLOSE(args[i]);
+      |                     ^~~~~~~~~~~~~~~~
+Python/ceval.c: In function 'PyEval_EvalCode':
+Python/ceval.c:2077:17: note: at offset [-17179869184, -8] into object 'stack_array' of size 64
+ 2077 |     _PyStackRef stack_array[8];
+      |                 ^~~~~~~~~~~

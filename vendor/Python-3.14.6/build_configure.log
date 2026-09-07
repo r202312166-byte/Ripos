@@ -1,0 +1,805 @@
+configure: loading site script /etc/config.site
+checking build system type... x86_64-w64-mingw32
+checking host system type... x86_64-w64-mingw32
+checking for --with-build-python... /c/Users/Administrator/AppData/Local/Python/pythoncore-3.14-64/python.exe
+checking for Python interpreter freezing... /c/Users/Administrator/AppData/Local/Python/pythoncore-3.14-64/python.exe
+checking for python3.14... (cached) /c/Users/Administrator/AppData/Local/Python/pythoncore-3.14-64/python.exe
+checking Python for regen version... Python 3.14.6
+checking for pkg-config... no
+checking MACHDEP... "mingw64_nt-10.0-190453"
+checking for --enable-universalsdk... no
+checking for --with-universal-archs... no
+checking for --with-app-store-compliance... not patching for app store compliance
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.exe
+checking for suffix of executables... .exe
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for egrep... /usr/bin/grep -E
+checking for CC compiler name... gcc
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for wchar.h... yes
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for GCC compatible compiler... yes
+checking for g++... /mingw64/bin/g++
+configure:
+
+  By default, distutils will build C++ extension modules with "/mingw64/bin/g++".
+  If this is not intended, then set CXX on the configure command line.
+  
+checking for the platform triplet based on compiler characteristics... none
+checking for multiarch... 
+checking for PEP 11 support tier... configure: WARNING: x86_64-w64-mingw32/gcc is not supported
+checking for -Wl,--no-as-needed... yes
+checking for the Android API level... not Android
+checking for --enable-wasm-dynamic-linking... missing
+checking for --enable-wasm-pthreads... missing
+checking for --with-suffix... 
+checking for case-insensitive build directory... yes
+checking LIBRARY... libpython$(VERSION)$(ABIFLAGS).a
+checking LINKCC... $(PURIFY) $(CC)
+checking EXPORTSYMS... 
+checking for GNU ld... yes
+checking for --enable-shared... no
+checking for --with-static-libpython... yes
+checking for --enable-profiling... no
+checking LDLIBRARY... libpython$(VERSION)$(ABIFLAGS).a
+checking HOSTRUNNER... 
+checking for ar... ar
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for --disable-gil... no
+checking for --with-pydebug... no
+checking for --with-trace-refs... no
+checking for --enable-pystats... no
+checking for --with-assertions... no
+checking for --enable-optimizations... no
+checking PROFILE_TASK... -m test --pgo --timeout=$(TESTTIMEOUT)
+checking for --with-lto... no
+checking for llvm-profdata... no
+checking for i686... no
+checking whether C compiler accepts -fprofile-update=atomic... yes
+checking for --enable-bolt... no
+checking BOLT_COMMON_FLAGS... checking BOLT_INSTRUMENT_FLAGS...  -update-debug-sections -skip-funcs=_PyEval_EvalFrameDefault,sre_ucs1_match/1,sre_ucs2_match/1,sre_ucs4_match/1 
+checking BOLT_APPLY_FLAGS...   -update-debug-sections -skip-funcs=_PyEval_EvalFrameDefault,sre_ucs1_match/1,sre_ucs2_match/1,sre_ucs4_match/1  -reorder-blocks=ext-tsp -reorder-functions=cdsort -split-functions -icf=1 -inline-all -split-eh -reorder-functions-use-hot-size -peepholes=none -jump-tables=aggressive -inline-ap -indirect-call-promotion=all -dyno-stats -use-gnu-stack -frame-opt=hot 
+checking if gcc supports -fstrict-overflow and -fno-strict-overflow... yes
+checking for --with-strict-overflow... no
+checking if gcc supports -Og optimization level... yes
+checking for --enable-safety... no
+checking for --enable-slower-safety... no
+checking if we can add -Wextra... yes
+checking whether gcc -fno-strict-aliasing accepts and needs -fno-strict-aliasing... no
+checking if we can disable gcc unused-parameter warning... yes
+checking if we can disable gcc int-conversion warning... yes
+checking if we can disable gcc missing-field-initializers warning... yes
+checking if we can enable gcc sign-compare warning... yes
+checking if we can enable gcc unreachable-code warning... yes
+checking if we can enable gcc strict-prototypes warning... yes
+checking if we can make implicit function declaration an error in gcc -Werror=implicit-function-declaration... yes
+checking if we can use visibility in gcc -fvisibility=hidden... yes
+checking for --enable-experimental-jit...  
+checking whether pthreads are available without options... yes
+checking whether /mingw64/bin/g++ also accepts flags for thread support... no
+checking for alloca.h... no
+checking for asm/types.h... no
+checking for bluetooth.h... no
+checking for conio.h... yes
+checking for direct.h... yes
+checking for dlfcn.h... no
+checking for endian.h... no
+checking for errno.h... yes
+checking for fcntl.h... yes
+checking for grp.h... no
+checking for io.h... yes
+checking for langinfo.h... no
+checking for libintl.h... yes
+checking for libutil.h... no
+checking for linux/auxvec.h... no
+checking for sys/auxv.h... no
+checking for linux/fs.h... no
+checking for linux/limits.h... no
+checking for linux/memfd.h... no
+checking for linux/netfilter_ipv4.h... no
+checking for linux/random.h... no
+checking for linux/soundcard.h... no
+checking for linux/sched.h... no
+checking for linux/tipc.h... no
+checking for linux/wait.h... no
+checking for netdb.h... no
+checking for net/ethernet.h... no
+checking for netinet/in.h... no
+checking for netpacket/packet.h... no
+checking for poll.h... no
+checking for process.h... yes
+checking for pthread.h... yes
+checking for pty.h... no
+checking for sched.h... yes
+checking for setjmp.h... yes
+checking for shadow.h... no
+checking for signal.h... yes
+checking for spawn.h... no
+checking for stropts.h... no
+checking for sys/audioio.h... no
+checking for sys/bsdtty.h... no
+checking for sys/devpoll.h... no
+checking for sys/endian.h... no
+checking for sys/epoll.h... no
+checking for sys/event.h... no
+checking for sys/eventfd.h... no
+checking for sys/file.h... yes
+checking for sys/ioctl.h... no
+checking for sys/kern_control.h... no
+checking for sys/loadavg.h... no
+checking for sys/lock.h... no
+checking for sys/memfd.h... no
+checking for sys/mkdev.h... no
+checking for sys/mman.h... no
+checking for sys/modem.h... no
+checking for sys/param.h... yes
+checking for sys/pidfd.h... no
+checking for sys/poll.h... no
+checking for sys/random.h... no
+checking for sys/resource.h... no
+checking for sys/select.h... no
+checking for sys/sendfile.h... no
+checking for sys/socket.h... no
+checking for sys/soundcard.h... no
+checking for sys/stat.h... (cached) yes
+checking for sys/statvfs.h... no
+checking for sys/sys_domain.h... no
+checking for sys/syscall.h... no
+checking for sys/sysmacros.h... no
+checking for sys/termio.h... no
+checking for sys/time.h... yes
+checking for sys/times.h... no
+checking for sys/timerfd.h... no
+checking for sys/types.h... (cached) yes
+checking for sys/uio.h... no
+checking for sys/un.h... no
+checking for sys/utsname.h... no
+checking for sys/wait.h... no
+checking for sys/xattr.h... no
+checking for sysexits.h... no
+checking for syslog.h... no
+checking for termios.h... no
+checking for util.h... no
+checking for utime.h... yes
+checking for utmp.h... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/mkdev.h... (cached) no
+checking for sys/sysmacros.h... (cached) no
+checking for bluetooth/bluetooth.h... no
+checking for net/if.h... no
+checking for linux/netlink.h... no
+checking for netlink/netlink.h... no
+checking for linux/qrtr.h... no
+checking for linux/vm_sockets.h... no
+checking for linux/can.h... no
+checking for linux/can/bcm.h... no
+checking for linux/can/j1939.h... no
+checking for linux/can/raw.h... no
+checking for netcan/can.h... no
+checking for clock_t... yes
+checking for makedev... no
+checking for le64toh... no
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking for uid_t... no
+checking for gid_t... no
+checking for ssize_t... yes
+checking for __uint128_t... yes
+checking size of int... 4
+checking size of long... 4
+checking alignment of long... 4
+checking size of long long... 8
+checking size of void *... 8
+checking size of short... 2
+checking size of float... 4
+checking size of double... 8
+checking size of fpos_t... 8
+checking size of size_t... 8
+checking alignment of size_t... 8
+checking size of pid_t... 8
+checking size of uintptr_t... 8
+checking alignment of max_align_t... 16
+checking for long double... yes
+checking size of long double... 16
+checking size of _Bool... 1
+checking size of off_t... 8
+checking whether to enable large file support... yes
+checking size of time_t... 8
+checking for pthread_t... yes
+checking size of pthread_t... 8
+checking size of pthread_key_t... 4
+checking whether pthread_key_t is compatible with int... yes
+checking for --enable-framework... no
+checking for --with-dsymutil... no
+checking for dyld... no
+checking for --with-address-sanitizer... no
+checking for --with-memory-sanitizer... no
+checking for --with-undefined-behavior-sanitizer... no
+checking for --with-thread-sanitizer... no
+checking the extension of shared libraries... .so
+checking LDSHARED... ld
+checking BLDSHARED flags... ld
+checking CCSHARED... 
+checking LINKFORSHARED... 
+checking CFLAGSFORSHARED... 
+checking SHLIBS... $(LIBS)
+checking perf trampoline... no
+checking for sendfile in -lsendfile... no
+checking for dlopen in -ldl... no
+checking for shl_load in -ldld... no
+checking for execinfo.h... no
+checking for link.h... no
+checking for dlfcn.h... (cached) no
+checking for uuid.h... no
+checking for uuid >= 2.20... no
+checking for uuid/uuid.h... no
+checking for uuid/uuid.h... (cached) no
+checking for library containing sem_init... none required
+checking for textdomain in -lintl... yes
+checking aligned memory access is required... no
+checking for --with-hash-algorithm... default
+checking for --with-tzpath... "/usr/share/zoneinfo:/usr/lib/zoneinfo:/usr/share/lib/zoneinfo:/etc/zoneinfo"
+checking for t_open in -lnsl... no
+checking for socket in -lsocket... no
+checking for --with-libs... no
+checking for --with-system-expat... no
+checking for libffi... no
+checking for ffi.h... no
+checking libffi has complex type support... no
+checking for --with-system-libmpdec... yes
+checking for libmpdec >= 2.5.0... no
+configure: WARNING: no system libmpdec found; falling back to bundled libmpdec (deprecated and scheduled for removal in Python 3.16)
+checking for --with-decimal-contextvar... yes
+checking for decimal libmpdec machine... uint128
+checking for sqlite3 >= 3.15.2... no
+checking for sqlite3.h... no
+checking for --enable-loadable-sqlite-extensions... no
+checking for gdbm.h... no
+checking for ndbm.h... no
+checking for ndbm presence and linker args...  ()
+checking for gdbm/ndbm.h... no
+checking for gdbm-ndbm.h... no
+checking for db.h... no
+checking for --with-dbmliborder... gdbm:ndbm:bdb
+checking for _dbm module CFLAGS and LIBS...  
+checking if PTHREAD_SCOPE_SYSTEM is supported... yes
+checking for pthread_sigmask... no
+checking for pthread_getcpuclockid... no
+checking if --enable-ipv6 is specified... no
+checking CAN_RAW_FD_FRAMES... no
+checking for CAN_RAW_JOIN_FILTERS... no
+checking for --with-doc-strings... no
+checking for stdatomic.h... yes
+checking for builtin __atomic_load_n and __atomic_store_n functions... yes
+checking for --with-mimalloc... yes
+checking for --with-pymalloc... yes
+checking for --with-c-locale-coercion... yes
+checking for --with-valgrind... no
+checking for --with-dtrace... no
+checking for dlopen... no
+checking DYNLOADFILE... dynload_stub.o
+checking MACHDEP_OBJS... none
+checking for accept4... no
+checking for alarm... yes
+checking for bind_textdomain_codeset... yes
+checking for chmod... yes
+checking for chown... no
+checking for clock... yes
+checking for closefrom... no
+checking for close_range... no
+checking for confstr... no
+checking for copy_file_range... no
+checking for ctermid... no
+checking for dladdr... no
+checking for dup... yes
+checking for execv... yes
+checking for explicit_bzero... no
+checking for explicit_memset... no
+checking for faccessat... no
+checking for fchmod... no
+checking for fchmodat... no
+checking for fchown... no
+checking for fchownat... no
+checking for fdopendir... no
+checking for fdwalk... no
+checking for fexecve... no
+checking for fork... no
+checking for fork1... no
+checking for fpathconf... no
+checking for fstatat... no
+checking for ftime... yes
+checking for ftruncate... yes
+checking for futimens... no
+checking for futimes... no
+checking for futimesat... no
+checking for gai_strerror... no
+checking for getegid... no
+checking for geteuid... no
+checking for getgid... no
+checking for getgrent... no
+checking for getgrgid... no
+checking for getgrgid_r... no
+checking for getgrnam_r... no
+checking for getgrouplist... no
+checking for gethostname... no
+checking for getitimer... no
+checking for getloadavg... no
+checking for getlogin... yes
+checking for getlogin_r... no
+checking for getpeername... no
+checking for getpgid... no
+checking for getpid... yes
+checking for getppid... no
+checking for getpriority... no
+checking for _getpty... no
+checking for getpwent... no
+checking for getpwnam_r... no
+checking for getpwuid... no
+checking for getpwuid_r... no
+checking for getresgid... no
+checking for getresuid... no
+checking for getrusage... no
+checking for getsid... no
+checking for getspent... no
+checking for getspnam... no
+checking for getuid... no
+checking for getwd... no
+checking for grantpt... no
+checking for if_nameindex... no
+checking for initgroups... no
+checking for kill... no
+checking for killpg... no
+checking for lchown... no
+checking for linkat... no
+checking for lockf... no
+checking for lstat... no
+checking for lutimes... no
+checking for madvise... no
+checking for mbrtowc... yes
+checking for memrchr... no
+checking for mkdirat... no
+checking for mkfifo... no
+checking for mkfifoat... no
+checking for mknod... no
+checking for mknodat... no
+checking for mktime... yes
+checking for mmap... no
+checking for mremap... no
+checking for nice... no
+checking for openat... no
+checking for opendir... yes
+checking for pathconf... no
+checking for pause... no
+checking for pipe... no
+checking for plock... no
+checking for poll... no
+checking for posix_fadvise... no
+checking for posix_fallocate... no
+checking for posix_openpt... no
+checking for posix_spawn... no
+checking for posix_spawnp... no
+checking for posix_spawn_file_actions_addclosefrom_np... no
+checking for pread... no
+checking for preadv... no
+checking for preadv2... no
+checking for process_vm_readv... no
+checking for pthread_cond_timedwait_relative_np... yes
+checking for pthread_condattr_setclock... yes
+checking for pthread_init... no
+checking for pthread_kill... yes
+checking for pthread_get_name_np... no
+checking for pthread_getname_np... yes
+checking for pthread_set_name_np... no
+checking for pthread_setname_np... yes
+checking for pthread_getattr_np... no
+checking for ptsname... no
+checking for ptsname_r... no
+checking for pwrite... no
+checking for pwritev... no
+checking for pwritev2... no
+checking for readlink... no
+checking for readlinkat... no
+checking for readv... no
+checking for realpath... no
+checking for renameat... no
+checking for rtpSpawn... no
+checking for sched_get_priority_max... yes
+checking for sched_rr_get_interval... no
+checking for sched_setaffinity... no
+checking for sched_setparam... no
+checking for sched_setscheduler... yes
+checking for sem_clockwait... no
+checking for sem_getvalue... yes
+checking for sem_open... yes
+checking for sem_timedwait... no
+checking for sem_unlink... yes
+checking for sendfile... no
+checking for setegid... no
+checking for seteuid... no
+checking for setgid... no
+checking for sethostname... no
+checking for setitimer... no
+checking for setlocale... yes
+checking for setpgid... no
+checking for setpgrp... no
+checking for setpriority... no
+checking for setregid... no
+checking for setresgid... no
+checking for setresuid... no
+checking for setreuid... no
+checking for setsid... no
+checking for setuid... no
+checking for setvbuf... yes
+checking for shutdown... no
+checking for sigaction... no
+checking for sigaltstack... no
+checking for sigfillset... no
+checking for siginterrupt... no
+checking for sigpending... no
+checking for sigrelse... no
+checking for sigtimedwait... no
+checking for sigwait... no
+checking for sigwaitinfo... no
+checking for snprintf... yes
+checking for splice... no
+checking for strftime... yes
+checking for strlcpy... no
+checking for strsignal... no
+checking for symlinkat... no
+checking for sync... no
+checking for sysconf... no
+checking for tcgetpgrp... no
+checking for tcsetpgrp... no
+checking for tempnam... yes
+checking for timegm... no
+checking for times... no
+checking for tmpfile... yes
+checking for tmpnam... yes
+checking for tmpnam_r... no
+checking for truncate... yes
+checking for ttyname_r... no
+checking for umask... yes
+checking for uname... no
+checking for unlinkat... no
+checking for unlockpt... no
+checking for utimensat... no
+checking for utimes... no
+checking for vfork... no
+checking for wait... no
+checking for wait3... no
+checking for wait4... no
+checking for waitid... no
+checking for waitpid... no
+checking for wcscoll... yes
+checking for wcsftime... yes
+checking for wcsxfrm... yes
+checking for wmemcmp... yes
+checking for writev... no
+checking for lchmod... no
+checking for dup3... no
+checking for getentropy... no
+checking for getgroups... no
+checking for pipe2... no
+checking for system... yes
+checking for gcc options needed to detect all undeclared functions... none needed
+checking whether dirfd is declared... no
+checking for chroot... no
+checking for link... no
+checking for symlink... no
+checking for fchdir... no
+checking for fsync... no
+checking for fdatasync... no
+checking for epoll_create... no
+checking for epoll_create1... no
+checking for kqueue... no
+checking for prlimit... no
+checking for _dyld_shared_cache_contains_path... no
+checking for memfd_create... no
+checking for eventfd... no
+checking for timerfd_create... no
+checking for ctermid_r... no
+checking for flock declaration... no
+checking for getpagesize... no
+checking for broken unsetenv... yes
+checking for true... true
+checking for inet_aton in -lc... no
+checking for inet_aton in -lresolv... no
+checking for hstrerror in -lc... no
+checking for hstrerror in -lresolv... no
+checking for chflags... no
+checking for lchflags... no
+checking for zlib >= 1.2.0... no
+checking for zlib.h... yes
+checking for gzread in -lz... yes
+checking for inflateCopy in -lz... yes
+checking for bzip2... no
+checking for bzlib.h... no
+checking for liblzma... no
+checking for lzma.h... no
+checking for libzstd >= 1.4.5... no
+checking for library containing ZDICT_finalizeDictionary... -lzstd
+checking ZSTD_VERSION_NUMBER >= 1.4.5... yes
+checking for zstd.h... yes
+checking for zdict.h... yes
+checking for hstrerror... no
+checking for getservbyname... no
+checking for getservbyport... no
+checking for gethostbyname... no
+checking for gethostbyaddr... no
+checking for getprotobyname... no
+checking for inet_aton... no
+checking for inet_ntoa... no
+checking for inet_pton... no
+checking for getpeername... (cached) no
+checking for getsockname... no
+checking for accept... no
+checking for bind... no
+checking for connect... no
+checking for listen... no
+checking for recvfrom... no
+checking for sendto... no
+checking for setsockopt... no
+checking for socket... no
+checking for setgroups... no
+checking whether MAXLOGNAME is declared... no
+checking whether UT_NAMESIZE is declared... no
+checking for openpty... no
+checking for openpty in -lutil... no
+checking for openpty in -lbsd... no
+checking for library containing login_tty... no
+checking for forkpty... no
+checking for forkpty in -lutil... no
+checking for forkpty in -lbsd... no
+checking for fseek64... no
+checking for fseeko... yes
+checking for fstatvfs... no
+checking for ftell64... no
+checking for ftello... yes
+checking for statvfs... no
+checking for dup2... yes
+checking for getpgrp... no
+checking for setpgrp... (cached) no
+checking for setns... no
+checking for unshare... no
+checking for clock_gettime... yes
+checking for clock_getres... yes
+checking for clock_settime... yes
+checking for clock_nanosleep... yes
+checking for nanosleep... yes
+checking for major, minor, and makedev... no
+checking for getaddrinfo... no
+checking for getnameinfo... no
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... no
+checking whether tzname is declared... yes
+checking for tzname... yes
+checking for struct stat.st_rdev... yes
+checking for struct stat.st_blksize... no
+checking for struct stat.st_flags... no
+checking for struct stat.st_gen... no
+checking for struct stat.st_birthtime... no
+checking for struct stat.st_blocks... no
+checking for struct passwd.pw_gecos... no
+checking for struct passwd.pw_passwd... no
+checking for siginfo_t.si_band... no
+checking for time.h that defines altzone... no
+checking for addrinfo... no
+checking for sockaddr_storage... no
+checking for sockaddr_alg... no
+checking for an ANSI C-conforming const... yes
+checking for working signed char... yes
+checking for prototypes... yes
+checking for socketpair... no
+checking if sockaddr has sa_len member... no
+checking for gethostbyname_r... no
+checking for gethostbyname... (cached) no
+checking for __fpu_control... no
+checking for __fpu_control in -lieee... no
+checking for --with-libm=STRING... default LIBM="-lm"
+checking for --with-libc=STRING... default LIBC=""
+checking for x64 gcc inline assembler... yes
+checking whether float word ordering is bigendian... no
+checking whether we can use gcc inline assembler to get and set x87 control word... yes
+checking whether we can use gcc inline assembler to get and set mc68881 fpcr... no
+checking for x87-style double rounding... no
+checking for acosh... yes
+checking for asinh... yes
+checking for atanh... yes
+checking for erf... yes
+checking for erfc... yes
+checking for expm1... yes
+checking for log1p... yes
+checking for log2... yes
+checking whether POSIX semaphores are enabled... no
+checking for broken sem_getvalue... yes
+checking whether RTLD_LAZY is declared... no
+checking whether RTLD_NOW is declared... no
+checking whether RTLD_GLOBAL is declared... no
+checking whether RTLD_LOCAL is declared... no
+checking whether RTLD_NODELETE is declared... no
+checking whether RTLD_NOLOAD is declared... no
+checking whether RTLD_DEEPBIND is declared... no
+checking whether RTLD_MEMBER is declared... no
+checking digit size for Python's longs... no value specified
+checking for wchar.h... (cached) yes
+checking size of wchar_t... 2
+checking whether wchar_t is signed... no
+checking whether wchar_t is usable... yes
+checking whether byte ordering is bigendian... no
+checking ABIFLAGS... 
+checking SOABI... cpython-314
+checking LDVERSION... $(VERSION)$(ABIFLAGS)
+checking for --with-platlibdir... no
+checking for --with-wheel-pkg-dir... no
+checking whether right shift extends the sign bit... yes
+checking for getc_unlocked() and friends... no
+checking for readline... no
+checking for readline/readline.h... no
+checking how to link readline... no
+checking for broken nice()... no
+checking for broken poll()... no
+checking for working tzset()... no
+checking for tv_nsec in struct stat... no
+checking for tv_nsec2 in struct stat... no
+checking for ncursesw... no
+checking for ncurses... no
+checking for ncursesw/curses.h... no
+checking for ncursesw/ncurses.h... no
+checking for ncursesw/panel.h... no
+checking for ncurses/curses.h... no
+checking for ncurses/ncurses.h... no
+checking for ncurses/panel.h... no
+checking for curses.h... no
+checking for ncurses.h... no
+checking for panel.h... no
+checking for library containing initscr... no
+checking for library containing update_panels... no
+checking for term.h... no
+checking whether mvwdelch is an expression... no
+checking whether WINDOW has _flags... no
+checking for curses function is_pad... no
+checking for curses function is_term_resized... no
+checking for curses function resize_term... no
+checking for curses function resizeterm... no
+checking for curses function immedok... no
+checking for curses function syncok... no
+checking for curses function wchgat... no
+checking for curses function filter... no
+checking for curses function has_key... no
+checking for curses function typeahead... no
+checking for curses function use_env... no
+configure: checking for device files
+checking for /dev/ptmx... yes
+checking for /dev/ptc... no
+checking for socklen_t... no
+checking for broken mbstowcs... no
+checking for --with-computed-gotos... no value specified
+checking whether gcc supports computed gotos... yes
+checking for --with-tail-call-interp... no value specified
+checking for --with-remote-debug... yes
+checking for build directories... done
+checking for -O2... yes
+checking for glibc _FORTIFY_SOURCE/memmove bug... no
+checking if we need to manually block large inlining in ceval.c... no
+checking for gcc ipa-pure-const bug... no
+checking for ensurepip... no
+checking if the dirent structure of a d_type field... no
+checking for the Linux getrandom() syscall... no
+checking for the getrandom() function... no
+checking for library containing shm_open... no
+checking for shm_open... no
+checking for shm_unlink... no
+checking for pkg-config... no
+checking for include/openssl/ssl.h in /usr/local/ssl... no
+checking for include/openssl/ssl.h in /usr/lib/ssl... no
+checking for include/openssl/ssl.h in /usr/ssl... no
+checking for include/openssl/ssl.h in /usr/pkg... no
+checking for include/openssl/ssl.h in /usr/local... no
+checking for include/openssl/ssl.h in /usr... no
+checking whether compiling and linking against OpenSSL works... no
+checking for --with-openssl-rpath... 
+checking whether OpenSSL provides required ssl module APIs... no
+checking whether OpenSSL provides required hashlib module APIs... no
+checking for --with-ssl-default-suites... python
+checking for --with-builtin-hashlib-hashes... md5,sha1,sha2,sha3,blake2
+checking for --disable-test-modules... no
+checking whether libatomic is needed by <pyatomic.h>... no
+checking for stdlib extension module _multiprocessing... yes
+checking for stdlib extension module _posixshmem... missing
+checking for stdlib extension module fcntl... missing
+checking for stdlib extension module mmap... missing
+checking for stdlib extension module _socket... missing
+checking for stdlib extension module grp... missing
+checking for stdlib extension module pwd... missing
+checking for stdlib extension module resource... missing
+checking for stdlib extension module _scproxy... n/a
+checking for stdlib extension module syslog... missing
+checking for stdlib extension module termios... missing
+checking for stdlib extension module pyexpat... yes
+checking for stdlib extension module _elementtree... yes
+checking whether C compiler accepts -msse -msse2 -msse3 -msse4.1 -msse4.2... yes
+checking for HACL* SIMD128 implementation... standard
+checking whether C compiler accepts -mavx2... yes
+checking for HACL* SIMD256 implementation... standard
+checking for HACL* library linking type... shared
+checking for stdlib extension module _md5... yes
+checking for stdlib extension module _sha1... yes
+checking for stdlib extension module _sha2... yes
+checking for stdlib extension module _sha3... yes
+checking for stdlib extension module _blake2... yes
+checking for stdlib extension module _hmac... yes
+checking for stdlib extension module _ctypes... missing
+checking for stdlib extension module _curses... missing
+checking for stdlib extension module _curses_panel... missing
+checking for stdlib extension module _decimal... yes
+checking for stdlib extension module _dbm... missing
+checking for stdlib extension module _gdbm... missing
+checking for stdlib extension module readline... missing
+checking for stdlib extension module _sqlite3... disabled
+checking for stdlib extension module _tkinter... missing
+checking for stdlib extension module _uuid... missing
+checking for stdlib extension module zlib... yes
+checking for stdlib extension module _bz2... missing
+checking for stdlib extension module _lzma... missing
+checking for stdlib extension module _zstd... yes
+checking for stdlib extension module _ssl... missing
+checking for stdlib extension module _hashlib... missing
+checking for stdlib extension module _testcapi... disabled
+checking for stdlib extension module _testclinic... disabled
+checking for stdlib extension module _testclinic_limited... disabled
+checking for stdlib extension module _testlimitedcapi... disabled
+checking for stdlib extension module _testinternalcapi... disabled
+checking for stdlib extension module _testbuffer... disabled
+checking for stdlib extension module _testimportmultiple... disabled
+checking for stdlib extension module _testmultiphase... disabled
+checking for stdlib extension module _testsinglephase... disabled
+checking for stdlib extension module xxsubtype... disabled
+checking for stdlib extension module _xxtestfuzz... disabled
+checking for stdlib extension module _ctypes_test... disabled
+checking for stdlib extension module xxlimited... disabled
+checking for stdlib extension module xxlimited_35... disabled
+configure: creating ./config.status
+config.status: creating Makefile.pre
+config.status: creating Misc/python.pc
+config.status: creating Misc/python-embed.pc
+config.status: creating Misc/python-config.sh
+config.status: creating Modules/Setup.bootstrap
+config.status: creating Modules/Setup.stdlib
+config.status: creating Modules/ld_so_aix
+config.status: creating pyconfig.h
+configure: creating Modules/Setup.local
+configure: creating Makefile
+configure: WARNING: pkg-config is missing. Some dependencies may not be detected correctly.
+configure:
+
+If you want a release build with all stable optimizations active (PGO, etc),
+please run ./configure --enable-optimizations
+
+configure: WARNING:
+
+Platform "x86_64-w64-mingw32" with compiler "gcc" is not supported by the
+CPython core team, see https://peps.python.org/pep-0011/ for more information.
+

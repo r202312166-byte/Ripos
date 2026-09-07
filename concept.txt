@@ -1,0 +1,7 @@
+I come up with a idea of Interpretive Operating System,
+it refers to having a interpreter in the system core and only the interpreter was in binary,
+all other functions are written in high-level programming language and run by the interpreter.
+
+I will perfer to have Rust to build the core language for the interpreter and Python as the high-level programming language.
+
+The project is named "Ripos" -- Rust interpreted Python Operating System.

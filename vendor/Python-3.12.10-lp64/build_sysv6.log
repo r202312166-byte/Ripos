@@ -1,0 +1,1 @@
+make: *** 没有规则可制作目标“Python/getplatform.c”，由“Python/getplatform.o” 需求。 停止。

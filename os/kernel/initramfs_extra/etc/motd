@@ -1,0 +1,15 @@
+Ripos
+=====
+Welcome to Ripos -- the Rust interpreted Python Operating System.
+
+The kernel's only binary component is CPython 3.12 (LP64, freestanding).
+Everything else runs as Python.
+
+- kern.write()      -> serial console
+- kern.tick()       -> uptime in ms
+- kern.after()      -> timer callbacks
+- kern.on_key()     -> keyboard events
+- import json, re, threading, struct, math, datetime, ...  -> stdlib (built-in C modules + initramfs)
+- import tk  -> tkinter-style widgets (no Tcl/Tk):  import tkdemo | import tkwindow
+
+M4 gate: Python reads this file via open('/etc/motd').

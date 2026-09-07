@@ -1,0 +1,67 @@
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -include posixcompat.h -mabi=sysv  -I./Include/internal  -I. -I./Include    -DPy_BUILD_CORE -o Python/_warnings.o Python/_warnings.c
+In file included from ./Include/Python.h:38,
+                 from Python/_warnings.c:1:
+./Include/internal/pycore_gc.h: In function '_PyGCHead_NEXT':
+./Include/pyport.h:24:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   24 | #define _Py_CAST(type, expr) ((type)(expr))
+      |                               ^
+./Include/internal/pycore_gc.h:60:12: note: in expansion of macro '_Py_CAST'
+   60 |     return _Py_CAST(PyGC_Head*, next);
+      |            ^~~~~~~~
+./Include/internal/pycore_gc.h: In function '_PyGCHead_SET_NEXT':
+./Include/pyport.h:24:31: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   24 | #define _Py_CAST(type, expr) ((type)(expr))
+      |                               ^
+./Include/internal/pycore_gc.h:63:20: note: in expansion of macro '_Py_CAST'
+   63 |     gc->_gc_next = _Py_CAST(uintptr_t, next);
+      |                    ^~~~~~~~
+./Include/internal/pycore_gc.h: In function '_PyGCHead_PREV':
+./Include/pyport.h:24:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   24 | #define _Py_CAST(type, expr) ((type)(expr))
+      |                               ^
+./Include/internal/pycore_gc.h:69:12: note: in expansion of macro '_Py_CAST'
+   69 |     return _Py_CAST(PyGC_Head*, prev);
+      |            ^~~~~~~~
+./Include/internal/pycore_gc.h: In function '_PyGCHead_SET_PREV':
+./Include/pyport.h:24:31: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   24 | #define _Py_CAST(type, expr) ((type)(expr))
+      |                               ^
+./Include/internal/pycore_gc.h:72:23: note: in expansion of macro '_Py_CAST'
+   72 |     uintptr_t uprev = _Py_CAST(uintptr_t, prev);
+      |                       ^~~~~~~~
+In file included from ./Include/internal/pycore_atomic.h:15,
+                 from ./Include/internal/pycore_interp.h:15,
+                 from Python/_warnings.c:3:
+./Include/internal/pycore_interp.h: In function '_PyInterpreterState_SetFinalizing':
+./Include/internal/pycore_interp.h:253:52: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  253 |     _Py_atomic_store_relaxed(&interp->_finalizing, (uintptr_t)tstate);
+      |                                                    ^
+./Include/internal/pycore_atomic.h:550:5: note: in expansion of macro '_Py_atomic_store_explicit'
+  550 |     _Py_atomic_store_explicit((ATOMIC_VAL), (NEW_VAL), _Py_memory_order_relaxed)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+./Include/internal/pycore_interp.h:253:5: note: in expansion of macro '_Py_atomic_store_relaxed'
+  253 |     _Py_atomic_store_relaxed(&interp->_finalizing, (uintptr_t)tstate);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./Include/internal/pycore_runtime.h:21,
+                 from ./Include/internal/pycore_long.h:12,
+                 from Python/_warnings.c:4:
+./Include/internal/pycore_pymem.h: In function '_PyMem_IsPtrFreed':
+./Include/internal/pycore_pymem.h:69:23: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   69 |     uintptr_t value = (uintptr_t)ptr;
+      |                       ^
+./Include/internal/pycore_runtime.h: In function '_PyRuntimeState_SetFinalizing':
+./Include/internal/pycore_runtime.h:220:53: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  220 |     _Py_atomic_store_relaxed(&runtime->_finalizing, (uintptr_t)tstate);
+      |                                                     ^
+./Include/internal/pycore_atomic.h:550:5: note: in expansion of macro '_Py_atomic_store_explicit'
+  550 |     _Py_atomic_store_explicit((ATOMIC_VAL), (NEW_VAL), _Py_memory_order_relaxed)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+./Include/internal/pycore_runtime.h:220:5: note: in expansion of macro '_Py_atomic_store_relaxed'
+  220 |     _Py_atomic_store_relaxed(&runtime->_finalizing, (uintptr_t)tstate);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+Python/_warnings.c: At top level:
+Python/_warnings.c:10:10: fatal error: clinic/_warnings.c.h: No such file or directory
+   10 | #include "clinic/_warnings.c.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:2801：Python/_warnings.o] 错误 1

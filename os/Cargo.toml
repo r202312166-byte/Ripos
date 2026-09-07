@@ -1,0 +1,25 @@
+[package]
+name = "os"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+resolver = "3"
+members = ["kernel", "test-kernel"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+opt-level = 2
+
+[build-dependencies]
+bootloader = { version = "0.11", default-features = false, features = ["bios"] }
+
+# Vendored fork of the bootloader crate (vendor/bootloader): the only change
+# is the BIOS VESA resolution cap in bios/stage-2/src/main.rs (the stock
+# bootloader hardcodes max 1280x720, which resolves to 800x600 on VirtualBox
+# and QEMU).  Raised to 1920x1080 so the OS gets a native 1280x1024+ screen.
+[patch.crates-io]
+bootloader = { path = "vendor/bootloader" }

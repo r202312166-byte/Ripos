@@ -1,0 +1,12 @@
+[package]
+name = "host_embed"
+version = "0.1.0"
+edition = "2021"
+description = "De-risk harness: hand-written CPython C API FFI embedded in Rust (host OS run)"
+
+[[bin]]
+name = "host_embed"
+path = "src/main.rs"
+
+[profile.release]
+debug = false

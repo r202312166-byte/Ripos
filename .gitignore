@@ -1,0 +1,22 @@
+# Ripos - Rust interpreted Python Operating System
+# Generated / derived artifacts are kept out of version control.
+
+# Rust/cargo build outputs (os/target, os/vendor/bootloader/*/target, ...)
+target/
+
+# Python bytecode caches
+__pycache__/
+*.py[cod]
+
+# Stray qemu stderr logs at the os crate root
+/os/*.log
+
+# Built boot/disk images (regenerated via `cargo run` and tools/make_iso.py)
+/os/dist/
+
+# Third-party download originals (extracted copies are kept under vendor/)
+*.tgz
+*.tar.gz
+
+# Accidental 100 MB stray file created inside the vendored CPython tree
+/vendor/Python-3.12.10-lp64/--format

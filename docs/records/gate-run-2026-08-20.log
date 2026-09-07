@@ -1,0 +1,3 @@
+M9.6: booting D:\Interpretive Operating System\os\target\bios.img (serial -> D:\Interpretive Operating System\target\m9x-media-serial.log, qmp 4597)
+M9.6: waiting for boot (up to 900s)
+M9.6: shell up; launching media player

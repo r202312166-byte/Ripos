@@ -1,0 +1,178 @@
+INFO : Framebuffer info: FrameBufferInfo { byte_len: 3932160, width: 1280, height: 1024, pixel_format: Bgr, bytes_per_pixel: 3, stride: 1280 }
+INFO : 4th Stage
+INFO : BiosInfo { stage_4: Region { start: 130000, len: 251a0 }, kernel: Region { start: 1000000, len: 22dc5d8 }, ramdisk: Region { start: 32dd000, len: 0 }, config_file: Region { start: 32dd000, len: 0 }, last_used_addr: 32dcfff, framebuffer: BiosFramebufferInfo { region: Region { start: e0000000, len: 3c0000 }, width: 500, height: 400, bytes_per_pixel: 3, stride: 500, pixel_format: Bgr }, memory_map_addr: 12140, memory_map_len: 8 }
+INFO : BIOS boot
+INFO : Elf file loaded at Pointer {
+    addr: 0x0000000001000000,
+    metadata: 36554200,
+}
+INFO : virtual_address_offset: 0x0
+INFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(4), offset: 0, virtual_addr: 200000, physical_addr: 200000, file_size: 1d7828c, mem_size: 1d7828c, align: 1000 })
+INFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(5), offset: 1d78290, virtual_addr: 1f79290, physical_addr: 1f79290, file_size: 2dc8d0, mem_size: 2dc8d0, align: 1000 })
+INFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 2054b60, virtual_addr: 2256b60, physical_addr: 2256b60, file_size: 27c0, mem_size: 34a0, align: 1000 })
+INFO : Mapping bss section
+INFO : Handling Segment: Ph64(ProgramHeader64 { type_: Ok(Load), flags: Flags(6), offset: 2057320, virtual_addr: 225a320, physical_addr: 225a320, file_size: 189d18, mem_size: 202030, align: 1000 })
+INFO : Mapping bss section
+INFO : Entry point at: 0x1f86ed0
+INFO : Creating GDT at PhysAddr(0x4376000)
+INFO : Map framebuffer
+INFO : Map physical memory
+INFO : Allocate bootinfo
+INFO : Create Memory Map
+INFO : Create bootinfo
+INFO : Jumping to kernel entry point at VirtAddr(0x1f86ed0)
+!Amouse: PS/2 wheel enabled (4-byte packets)
+mouse: PS/2 mouse ready (IRQ12)
+BCK0
+DK0
+Ripos: kernel core alive
+Ripos -- the Rust interpreted Python Operating System
+PK1
+allocator selftest:
+  ok: basic allocs
+  ok: basic alignment
+  ok: used_bytes tracks allocations
+  ok: freed block is reused (first-fit)
+  ok: adjacent allocs
+  ok: coalescing reuses the merged run
+  ok: 4096-aligned alloc
+  ok: stress allocs (256 blocks)
+  ok: whole-heap alloc after coalescing
+allocator selftest: PASS
+region[0]: 0..9fc00 Usable
+region[1]: 9fc00..a0000 UnknownBios(2)
+region[2]: f0000..100000 UnknownBios(2)
+region[3]: 100000..1000000 Usable
+region[4]: 1000000..32dd000 Bootloader
+region[5]: 32dd000..4388000 Bootloader
+region[6]: 4388000..7fff0000 Usable
+region[7]: 7fff0000..80000000 UnknownBios(3)
+region[8]: fec00000..fec01000 UnknownBios(2)
+region[9]: fee00000..fee01000 UnknownBios(2)
+region[10]: fffc0000..100000000 UnknownBios(2)
+audio: codec reset id=0x0
+audio: AC97 ready mixer=0xd100 nabm=0xd200 id=0x0 ring_v=0x10018010000 ring_phys=0x18010000 bdl_phys=0x182100b0
+nic: bar0=0xf0200000 mmio=0xf0200000 phys_off=0x10000000000 cr3=0x32dd000
+mmio: v=0xf0200000 pml4[0]=0x32de023 pdpt[3]=0x18211003 pd[385]=0xf0200083
+nic: mmio map=true
+nic: tbl pml4[0]=0x32de023 pdpt[3]=0x18211003 pd[244]=0x0
+nic: ctrl read=0xa09
+nic: tx ring flushed tdbal=0x1822a4b0 tdlen=256
+nic: tx queued len=60 (dd not yet confirmed; emulated TX pending)
+nic: selftest tx_ok=true tdh=0 tdt=1 tx0=00 icr=0x0
+nic: e1000 ready mmio=0xf0200000 mac=08:00:27:cf:54:7c
+net: smoltcp up (10.0.2.15/24 gw 10.0.2.2)
+page: low 1G identity-mapped
+vfs: initramfs parsed, 000000000000028a entries, /home RAM disk mounted
+fbmap: framebuffer mapping extended to 16777216 bytes (phys e0000000)
+framebuffer: 1280x1024 stride=1280 bpp=3 fmt=0 @0x8000000000 (16777216 bytes)
+E1h=0000010010000000;Fheaps: rust 64M@0x18000000, c 96M@0x10000000, regions: 11
+2h=0000010010000000;Hcalloc(0000000000000100)->0000010010000020
+3h=0000010010000000;K2 scheduler up
+booting Python...
+abcdefdecalloc(0000000000000120)->0000010010001420
+calloc(0000000000040000)->0000010010115c80
+calloc(0000000000020000)->0000010010155ca0
+f4h=0000010010000000;K3 Python initialized
+calloc(0000000000004380)->00000100101e7180
+calloc(00000000000003e8)->00000100101e7180
+calloc(0000000000000e10)->00000100101e7590
+calloc(0000000000000280)->00000100101dc620
+calloc(0000000000000e10)->00000100101e83c0
+None
+calloc(0000000000004380)->00000100101e7180
+calloc(00000000000003e8)->00000100101e7180
+calloc(0000000000000e10)->00000100101e7590
+calloc(0000000000000280)->00000100101dc620
+calloc(0000000000000e10)->00000100101e83c0
+Python core alive
+None
+calloc(0000000000004380)->00000100101e7180
+calloc(00000000000003e8)->00000100101e7180
+calloc(0000000000000e10)->00000100101e7590
+calloc(0000000000000280)->00000100101dc620
+calloc(0000000000000e10)->00000100101e83c0
+42
+None
+calloc(0000000000004380)->00000100101e7180
+calloc(00000000000003e8)->00000100101e7180
+calloc(0000000000000e10)->00000100101e7590
+calloc(00000000000003e8)->00000100101e83c0
+calloc(0000000000000e10)->00000100101e87d0
+kern module loaded; tick=60
+keyboard ready; type into the QEMU monitor: sendkey a
+None
+--- import self-check (59 builtin modules) ---
+import json                       OK
+import re                         OK
+import collections                OK
+import functools                  OK
+import threading                  OK
+import copyreg                    OK
+import importlib.util             OK
+import html.parser                OK
+import xml.etree.ElementTree      OK
+import logging                    OK
+import termcolor                  OK (3rd-party pure-Python: '\x1b[32mthird-party\x1b[0m')
+import six                        OK (3rd-party, PY3=True)
+import struct                     OK
+import array                      OK
+import math                       OK
+import binascii                   OK
+import datetime                   OK
+import csv                        OK
+import random                     OK
+import bisect                     OK
+import heapq                      OK
+import queue                      OK
+import statistics                 OK
+import base64                     OK
+import decimal                    OK
+import string                     OK
+struct pack/unpack: (4660, 22136, 2596069104)
+math repr: sqrt(2)=1.4142135623730951 sin(1)=0.8414709848078965 lgamma(5)=3.1780538303479453 erf(1)=0.8427007929497149
+math fmt:  sqrt(2)=1.4142 sin(1)=0.8415 lgamma(5)=3.18 erf(1)=0.8427
+shim fmt: 1.4142=1.4142 0.8415=0.8415 3.1781=3.18 0.8427=0.8427
+binascii: b'5269706f73'
+datetime: 2026-08-16T12:00:00
+array: [1, 2, 3] sum=6
+hashlib: sha256=777fa4a11891b11e md5=027f9a78e689ad63
+import decimal                    OK
+import _pydecimal                 OK
+import statistics                 OK
+decimal: 6.28318
+motd: 'Ripos'
+json roundtrip: {"hello": 42, "items": [1, 2, 3], "ratio": 0.5} -> {'hello': 42, 'items': [1, 2, 3], 'ratio': 0.5}
+hello from /dev/serial
+os.listdir(/): ['__future__.py', '__hello__.py', '__phello__', '_aix_support.py', '_collections_abc.py', '_compat_pickle.py']
+fs self-check done
+Interpreter ready.
+m8: booting shell
+m8: shell ready -- boot-to-shell demo (sendkey to type)
+>>> None
+timer callback after 1000ms
+timer callback after 2000ms; alloc=(2270432, 67108864)
+nic: rx pending len=68 (rdh=1 rdt=31)
+>>> import zipfile
+>>> zipfile.ZipFile('/home/test.zip').extractall('/home')
+[Errno 30] U: '/home/testaudio.MP3'
+>>> media /home/testaudio.MP3
+shell: starting mplayer (/home/testaudio.MP3)
+mplayer: loading /home/testaudio.MP3
+mplayer: MP3 1:54
+mplayer: MP3 screen ready
+tk: mainloop started (1280x1024, 0 widgets)
+mplayer: player ready (event-driven)
+mplayer: quit
+tk: destroyed
+shell: ready
+>>> media /home/testvideo-mjpeg.mp4
+shell: starting mplayer (/home/testvideo-mjpeg.mp4)
+mplayer: loading /home/testvideo-mjpeg.mp4
+mplayer: MP4 0:06
+mplayer: MP4 screen ready
+tk: mainloop started (1280x1024, 0 widgets)
+mplayer: player ready (event-driven)
+mplayer: quit
+tk: destroyed
+shell: ready

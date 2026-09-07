@@ -1,0 +1,7 @@
+方法调用失败，因为 [System.Char] 不包含名为“ToLower”的方法。
+所在位置 D:\Interpretive Operating System\os\target\m9x-media-verify.ps1:95 字符: 27
++ ...       elseif ($upper) { $keys += ("shift-" + [string]$ch.ToLower()) }
++                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) []，ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MethodNotFound
+ 

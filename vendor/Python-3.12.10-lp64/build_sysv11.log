@@ -1,0 +1,110 @@
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -include posixcompat.h -mabi=sysv -fno-pie -fno-pic  -I./Include/internal  -I. -I./Include    -DPy_BUILD_CORE \
+	-DABIFLAGS='""' \
+	 \
+	-o Python/sysmodule.o ./Python/sysmodule.c
+In file included from ./Include/Python.h:38,
+                 from ./Python/sysmodule.c:17:
+./Include/internal/pycore_gc.h: In function '_PyGCHead_NEXT':
+./Include/pyport.h:24:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   24 | #define _Py_CAST(type, expr) ((type)(expr))
+      |                               ^
+./Include/internal/pycore_gc.h:60:12: note: in expansion of macro '_Py_CAST'
+   60 |     return _Py_CAST(PyGC_Head*, next);
+      |            ^~~~~~~~
+./Include/internal/pycore_gc.h: In function '_PyGCHead_SET_NEXT':
+./Include/pyport.h:24:31: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   24 | #define _Py_CAST(type, expr) ((type)(expr))
+      |                               ^
+./Include/internal/pycore_gc.h:63:20: note: in expansion of macro '_Py_CAST'
+   63 |     gc->_gc_next = _Py_CAST(uintptr_t, next);
+      |                    ^~~~~~~~
+./Include/internal/pycore_gc.h: In function '_PyGCHead_PREV':
+./Include/pyport.h:24:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+   24 | #define _Py_CAST(type, expr) ((type)(expr))
+      |                               ^
+./Include/internal/pycore_gc.h:69:12: note: in expansion of macro '_Py_CAST'
+   69 |     return _Py_CAST(PyGC_Head*, prev);
+      |            ^~~~~~~~
+./Include/internal/pycore_gc.h: In function '_PyGCHead_SET_PREV':
+./Include/pyport.h:24:31: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   24 | #define _Py_CAST(type, expr) ((type)(expr))
+      |                               ^
+./Include/internal/pycore_gc.h:72:23: note: in expansion of macro '_Py_CAST'
+   72 |     uintptr_t uprev = _Py_CAST(uintptr_t, prev);
+      |                       ^~~~~~~~
+In file included from ./Include/internal/pycore_atomic.h:15,
+                 from ./Include/internal/pycore_runtime.h:12,
+                 from ./Include/internal/pycore_pystate.h:11,
+                 from ./Include/internal/pycore_call.h:11,
+                 from ./Python/sysmodule.c:18:
+./Include/internal/pycore_interp.h: In function '_PyInterpreterState_SetFinalizing':
+./Include/internal/pycore_interp.h:253:52: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  253 |     _Py_atomic_store_relaxed(&interp->_finalizing, (uintptr_t)tstate);
+      |                                                    ^
+./Include/internal/pycore_atomic.h:550:5: note: in expansion of macro '_Py_atomic_store_explicit'
+  550 |     _Py_atomic_store_explicit((ATOMIC_VAL), (NEW_VAL), _Py_memory_order_relaxed)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+./Include/internal/pycore_interp.h:253:5: note: in expansion of macro '_Py_atomic_store_relaxed'
+  253 |     _Py_atomic_store_relaxed(&interp->_finalizing, (uintptr_t)tstate);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./Include/internal/pycore_runtime.h:21:
+./Include/internal/pycore_pymem.h: In function '_PyMem_IsPtrFreed':
+./Include/internal/pycore_pymem.h:69:23: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   69 |     uintptr_t value = (uintptr_t)ptr;
+      |                       ^
+./Include/internal/pycore_runtime.h: In function '_PyRuntimeState_SetFinalizing':
+./Include/internal/pycore_runtime.h:220:53: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  220 |     _Py_atomic_store_relaxed(&runtime->_finalizing, (uintptr_t)tstate);
+      |                                                     ^
+./Include/internal/pycore_atomic.h:550:5: note: in expansion of macro '_Py_atomic_store_explicit'
+  550 |     _Py_atomic_store_explicit((ATOMIC_VAL), (NEW_VAL), _Py_memory_order_relaxed)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+./Include/internal/pycore_runtime.h:220:5: note: in expansion of macro '_Py_atomic_store_relaxed'
+  220 |     _Py_atomic_store_relaxed(&runtime->_finalizing, (uintptr_t)tstate);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ./Python/sysmodule.c:24:
+./Include/internal/pycore_object.h: In function '_PyObject_GC_TRACK':
+./Include/internal/pycore_object.h:227:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  227 |     PyGC_Head *last = (PyGC_Head*)(generation0->_gc_prev);
+      |                       ^
+./Include/internal/pycore_object.h:231:29: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  231 |     generation0->_gc_prev = (uintptr_t)gc;
+      |                             ^
+./Include/internal/pycore_object.h: In function '_PyDictOrValues_IsValues':
+./Include/internal/pycore_object.h:394:13: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  394 |     return ((uintptr_t)dorv.values) & 1;
+      |             ^
+./Python/sysmodule.c: In function 'get_hash_info':
+./Include/pyhash.h:30:37: warning: left shift count >= width of type [-Wshift-count-overflow]
+   30 | #define _PyHASH_MODULUS (((size_t)1 << _PyHASH_BITS) - 1)
+      |                                     ^~
+./Python/sysmodule.c:1540:27: note: in definition of macro 'SET_HASH_INFO_ITEM'
+ 1540 |         PyObject *item = (CALL);                             \
+      |                           ^~~~
+./Python/sysmodule.c:1549:43: note: in expansion of macro '_PyHASH_MODULUS'
+ 1549 |     SET_HASH_INFO_ITEM(PyLong_FromSsize_t(_PyHASH_MODULUS));
+      |                                           ^~~~~~~~~~~~~~~
+./Python/sysmodule.c: In function 'PyUnstable_WritePerfMapEntry':
+./Python/sysmodule.c:2437:62: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2437 |     fprintf(perf_map_state.perf_map, "%" PRIxPTR " %x %s\n", (uintptr_t) code_addr, code_size, entry_name);
+      |                                                              ^
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -include posixcompat.h -mabi=sysv -fno-pie -fno-pic  -I./Include/internal  -I. -I./Include    -DPy_BUILD_CORE \
+      -DGITVERSION="\"`LC_ALL=C `\"" \
+      -DGITTAG="\"`LC_ALL=C `\"" \
+      -DGITBRANCH="\"`LC_ALL=C `\"" \
+      -o Modules/getbuildinfo.o ./Modules/getbuildinfo.c
+gcc -c -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall    -std=c11 -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wstrict-prototypes -Werror=implicit-function-declaration -fvisibility=hidden -include posixcompat.h -mabi=sysv -fno-pie -fno-pic  -I./Include/internal  -I. -I./Include    -DPy_BUILD_CORE -DPYTHONPATH='"./Lib"' \
+	-DPREFIX='"/mingw64"' \
+	-DEXEC_PREFIX='"/mingw64"' \
+	-DVERSION='"3.12"' \
+	-DVPATH='""' \
+	-DPLATLIBDIR='"lib"' \
+	-DPYTHONFRAMEWORK='""' \
+	-o Modules/getpath.o ./Modules/getpath.c
+In file included from ./Modules/getpath.c:9:
+./Include/internal/pycore_pymem.h: In function '_PyMem_IsPtrFreed':
+./Include/internal/pycore_pymem.h:69:23: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   69 |     uintptr_t value = (uintptr_t)ptr;
+      |                       ^
+rm -f libpython3.12.a
+ar rcs libpython3.12.a Modules/getbuildinfo.o Parser/token.o  Parser/pegen.o Parser/pegen_errors.o Parser/action_helpers.o Parser/parser.o Parser/string_parser.o Parser/peg_api.o Parser/myreadline.o Parser/tokenizer.o Objects/abstract.o Objects/boolobject.o Objects/bytes_methods.o Objects/bytearrayobject.o Objects/bytesobject.o Objects/call.o Objects/capsule.o Objects/cellobject.o Objects/classobject.o Objects/codeobject.o Objects/complexobject.o Objects/descrobject.o Objects/enumobject.o Objects/exceptions.o Objects/genericaliasobject.o Objects/genobject.o Objects/fileobject.o Objects/floatobject.o Objects/frameobject.o Objects/funcobject.o Objects/interpreteridobject.o Objects/iterobject.o Objects/listobject.o Objects/longobject.o Objects/dictobject.o Objects/odictobject.o Objects/memoryobject.o Objects/methodobject.o Objects/moduleobject.o Objects/namespaceobject.o Objects/object.o Objects/obmalloc.o Objects/picklebufobject.o Objects/rangeobject.o Objects/setobject.o Objects/sliceobject.o Objects/structseq.o Objects/tupleobject.o Objects/typeobject.o Objects/typevarobject.o Objects/unicodeobject.o Objects/unicodectype.o Objects/unionobject.o Objects/weakrefobject.o  Python/_warnings.o Python/Python-ast.o Python/Python-tokenize.o Python/asdl.o Python/assemble.o Python/ast.o Python/ast_opt.o Python/ast_unparse.o Python/bltinmodule.o Python/ceval.o Python/codecs.o Python/compile.o Python/context.o Python/dynamic_annotations.o Python/errors.o Python/flowgraph.o Python/frame.o Python/frozenmain.o Python/future.o Python/getargs.o Python/getcompiler.o Python/getcopyright.o Python/getplatform.o Python/getversion.o Python/ceval_gil.o Python/hamt.o Python/hashtable.o Python/import.o Python/importdl.o Python/initconfig.o Python/instrumentation.o Python/intrinsics.o Python/legacy_tracing.o Python/marshal.o Python/modsupport.o Python/mysnprintf.o Python/mystrtoul.o Python/pathconfig.o Python/preconfig.o Python/pyarena.o Python/pyctype.o Python/pyfpe.o Python/pyhash.o Python/pylifecycle.o Python/pymath.o Python/pystate.o Python/pythonrun.o Python/pytime.o Python/bootstrap_hash.o Python/specialize.o Python/structmember.o Python/symtable.o Python/sysmodule.o Python/thread.o Python/traceback.o Python/tracemalloc.o Python/getopt.o Python/pystrcmp.o Python/pystrtod.o Python/pystrhex.o Python/dtoa.o Python/formatter_unicode.o Python/fileutils.o Python/suggestions.o Python/perf_trampoline.o Python/dynload_stub.o     Modules/config.o Modules/main.o Modules/gcmodule.o Modules/atexitmodule.o  Modules/faulthandler.o  Modules/posixmodule.o  Modules/signalmodule.o  Modules/_tracemalloc.o  Modules/_codecsmodule.o  Modules/_collectionsmodule.o  Modules/errnomodule.o  Modules/_io/_iomodule.o Modules/_io/iobase.o Modules/_io/fileio.o Modules/_io/bytesio.o Modules/_io/bufferedio.o Modules/_io/textio.o Modules/_io/stringio.o  Modules/itertoolsmodule.o  Modules/_sre/sre.o  Modules/_threadmodule.o  Modules/timemodule.o  Modules/_typingmodule.o  Modules/_weakref.o  Modules/_abc.o  Modules/_functoolsmodule.o  Modules/_localemodule.o  Modules/_operator.o  Modules/_stat.o  Modules/symtablemodule.o Python/deepfreeze/deepfreeze.o Modules/getpath.o Python/frozen.o

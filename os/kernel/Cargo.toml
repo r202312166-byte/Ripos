@@ -1,0 +1,11 @@
+[package]
+name = "interpretive-kernel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bootloader_api = "0.11"
+libm = "0.2"
+limine = "0.6.5"
+# Phase 2: TCP/IP stack (no_std; medium-ethernet + IPv4 + TCP/UDP).
+smoltcp = { version = "0.11.0", default-features = false, features = ["alloc", "medium-ethernet", "proto-ipv4", "socket-tcp", "socket-udp", "socket-icmp"] }
